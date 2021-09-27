@@ -10,7 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit from ulysse device
 $(call inherit-product, device/xiaomi/ulysse/device.mk)
@@ -18,12 +18,17 @@ $(call inherit-product, device/xiaomi/ulysse/device.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_GAPPS_ARCH := arm64
+FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ulysse
-PRODUCT_NAME := lineage_ulysse
+PRODUCT_NAME := aosp_ulysse
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi Note 5A / Y1
+PRODUCT_MODEL := Redmi Note 5A / Y1 
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 
