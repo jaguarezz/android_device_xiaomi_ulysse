@@ -8,4 +8,4 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/derp_ulysse.mk
 
 COMMON_LUNCH_CHOICES := \
-    dot_ulysse-user
+    derp_ulysse-user
