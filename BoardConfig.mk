@@ -17,7 +17,7 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_ulysse
 TARGET_RECOVERY_DEVICE_MODULES := libinit_ulysse
 
 # Kernel
-TARGET_KERNEL_CONFIG := mi8937_defconfig
+TARGET_KERNEL_CONFIG := ulysse_defconfig
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/sys/dev/dt2w"
