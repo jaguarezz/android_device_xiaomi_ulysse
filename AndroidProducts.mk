@@ -5,7 +5,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_ulysse.mk
+    $(LOCAL_DIR)/dot_ulysse.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_ulysse-user
+    dot_ulysse-userdebug
