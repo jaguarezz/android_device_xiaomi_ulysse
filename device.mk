@@ -54,9 +54,19 @@ PRODUCT_PACKAGES += \
     init.xiaomi.device.rc \
     init.xiaomi.device.sh
 
+# Hals
+SRC_AUDIO_HAL_DIR := hardware/qcom-caf/msm8937/audio
+SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/msm8937/display
+SRC_MEDIA_HAL_DIR := hardware/qcom-caf/msm8937/media
+
+# Soong
+PRODUCT_BOARD_PLATFORM := msm8937
+PRODUCT_USES_QCOM_HARDWARE := true
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+    hardware/qcom-caf/msm8937
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/ulysse/ulysse-vendor.mk)
