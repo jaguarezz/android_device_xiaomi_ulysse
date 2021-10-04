@@ -65,7 +65,7 @@ PRODUCT_USES_QCOM_HARDWARE := true
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
     hardware/qcom-caf/msm8937
 
 # Inherit from vendor blobs
